@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w100{
+    width: 100%;
+}
+
+@font-face{
+    src: url(../fonts/Cinzel-Regular.ttf);
+    font-family: 'cinzel';
+}
+/***********/
+/*CUTOMIZAÇÃO DA PAGINA DE VEICULA UNICA*/
+
+
+.veiculo-single{
+    height: 120%;
+}
+
+.veiculo-single .container{
+    max-width: 1440px;
+}
+
+.veiculo-single .info-carro input{
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    cursor: pointer;
+    color: white;  
+    border: none;
+}
+
+.veiculo-single .info-carro input:focus{
+    outline: 0;
+}
+
+.veiculo-single .descricao-veiculo{
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    margin-top: 40px;
+}
+
+.descricao-veiculo p{
+    max-width: 250px;
+    margin-top: 25px;
+}
+
+
+.descricao-veiculo input{
+    margin-top: 25px;
+}
+.foto-destaque{
+    width: 100%;
+    padding-top: 80%;
+    margin-top: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.veiculo-single .nav-galeria{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: scroll;                                                                         
+}
+
+.veiculo-single .nav-galeria-wrapper{
+    width: 196%;
+}
+
+.veiculo-single .mini-img{
+    float: left;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: calc(33.3% * (100% / 200) * 0.4);
+    width: calc(33.3% * (100% / 200));
+    height: 50px;
+    border: 1px solid white;
+}
+
+@media screen and (max-width:1440px){
+
+    .veiculo-single{
+        height: 121%;
+    }
+
+    section.contato .formulario-contato{
+        position: relative;
+        left: 360px;
+        bottom: 390px;
+    }
+
+    .veiculo-single .container{
+        max-width: 1800px;
+    }
+
+    section.contato .formulario-contato input[type=text]{
+        width: 350px;
+    }
+    
+    
+    section.contato .formulario-contato input[type=tel]{
+        width: 350px;
+    }
+    
+    section.contato .formulario-contato input[type=date]{
+      display: none;
+    }
+    
+    
+    section.contato .formulario-contato input[type=email]{
+        width: 350px;
+    }
+    
+    
+    section.contato .formulario-contato textarea{
+        width: 350px;
+    }
+    
+    section.contato .formulario-contato input[type=submit]{
+        width: 160px;
+        left: 250px;
+        background-color: red;
+        color: white;
+    }
+    
+} 
+
+@media screen and (max-width: 1024px){
+    .veiculo-single{
+        height: 123%;
+    }
+
+    section.contato .formulario-contato{ 
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:768px){
+    .veiculo-single{
+        height: 165%;
+    }
+
+    .veiculo-single .descricao-veiculo{
+        top: -10px;
+        right: 50px;
+    }
+
+    .info-veiculo{
+        float: none;
+        width: 100%;
+    }
+    
+
+    .foto-destaque{
+       width: 90%;
+       margin-left: 20px;
+    }
+
+    
+    .veiculo-single .nav-galeria{
+       display: none;                                                                        
+    }
+
+    section.contato .formulario-contato{ 
+        position: relative;
+        top:-6px;
+        left: 10px;
+        bottom: 20px;
+    }
+
+    section.contato .formulario-contato input[type=submit]{
+        width: 160px;
+        left: 100px;
+        background-color: red;
+        color: white;
+    }
+
+    .veiculo-single .info-carro input{
+        display: none;
+    }
+}
