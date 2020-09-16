@@ -5,7 +5,7 @@ session_start();
 //dados da conexão 
 $localhost = "localhost";
 $user = "root";
-$passw = "";
+$passw = "****"; //senha do db
 $banco = "autovendas";
 
 //chamo a variável global

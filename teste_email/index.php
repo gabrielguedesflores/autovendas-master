@@ -16,8 +16,8 @@ try {
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'gabrielteste@gmail.com';
-	$mail->Password = '********';
+	$mail->Username = 'gabrielteste@gmail.com'; //aqui vai o e-mail da conta que vai disparar o e-mail
+	$mail->Password = '********'; //aqui vai a senha da conta que vai disparar o e-mail
 	$mail->Port = 587;
 
 	$mail->setFrom('gabrielteste@gmail.com');

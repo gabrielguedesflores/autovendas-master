@@ -19,8 +19,8 @@ class sendEmail{
 			$mail->isSMTP();
 			$mail->Host = 'smtp.gmail.com';
 			$mail->SMTPAuth = true;
-			$mail->Username = 'gabrielteste@gmail.com';
-			$mail->Password = '******';
+			$mail->Username = 'gabrielteste@gmail.com';  //aqui vai o e-mail da conta que vai disparar o e-mail
+			$mail->Password = '******';  //aqui vai a senha da conta que vai disparar o e-mail
 			$mail->Port = 587;
 			
 			// Define o remetente
@@ -30,14 +30,15 @@ class sendEmail{
 			$mail->addAddress($email, 'gabrielteste@gmail.com');
 		
 			$mail->isHTML(true);
-			$mail->Subject = 'Auto-vendas - Retorno do Contato';
-			$mail->Body = 'Olá, '.$name.'! Segue dados de sua solicitação <br>
+			$mail->Subject = 'Auto-vendas - Retorno do Contato';  //assunto
+			$mail->Body = 'Olá, '.$name.'! Segue dados de sua solicitação <br> 
 							Nome: '.$name.'<br>
 							Nascimento: '.$date_bd.'<br>
 							Telefone: '.$phone.'<br>
-							Mensagem: '.$message;			
+							Mensagem: '.$message;	//corpo do e-mail		
 			$mail->AltBody = 'E-mail enviado';
 		
+			//validação para executar o envio e se ele retorna true
 			if($mail->send()){
 				return true;
 			}else{
